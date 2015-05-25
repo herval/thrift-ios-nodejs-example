@@ -7,7 +7,11 @@ class MainViewController: UIViewController {
     @IBOutlet var operationsLog: UITextView!
     
     @IBAction func pingServerTapped(sender: AnyObject) {
-        messaging!.ping({
+        messaging!.ping({ (err: NSException?) in
+            if let error = err {
+                self.operationsLog.insertText("\n\(error.description)")
+                return
+            }
             self.operationsLog.insertText("\nping complete!")
         })
     }

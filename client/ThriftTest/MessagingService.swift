@@ -16,9 +16,22 @@ class MessagingService {
         self.proto = TBinaryProtocol(transport: transport, strictRead: true, strictWrite: true)
     }
     
-    func ping(done: () -> Void) {
-        MessagingClient(withProtocol: proto).ping(self.credentials)
-        done()
+    func ping(done: (err: NSException?) -> Void) {
+        let client = MessagingClient(withProtocol: proto)
+        
+        try {
+            ({
+                client.ping(self.credentials)
+                done(err: nil)
+            },
+            catch: { ex in
+                done(err: ex)
+            },
+            finally: {
+            }
+        )}
+        
+        return
     }
     
 }

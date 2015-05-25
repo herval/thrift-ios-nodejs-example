@@ -14,6 +14,8 @@
 		5F12F1BA1A98BDA400565B68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F12F1B91A98BDA400565B68 /* Images.xcassets */; };
 		5F12F1BD1A98BDA400565B68 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F12F1BB1A98BDA400565B68 /* LaunchScreen.xib */; };
 		5F4EF4B81B135AED00C8D5D8 /* MessagingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4EF4B71B135AED00C8D5D8 /* MessagingService.m */; };
+		5F4EF4BA1B13612B00C8D5D8 /* OSSExceptionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4EF4B91B13612B00C8D5D8 /* OSSExceptionHelper.m */; };
+		5F4EF4BD1B13630300C8D5D8 /* OSSTry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4EF4BC1B13630300C8D5D8 /* OSSTry.swift */; };
 		5FBF6C6F1B135515001F1538 /* MessagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBF6C6E1B135515001F1538 /* MessagingService.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,9 @@
 		5F4EF4B11B13580900C8D5D8 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		5F4EF4B61B135AED00C8D5D8 /* MessagingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagingService.h; sourceTree = "<group>"; };
 		5F4EF4B71B135AED00C8D5D8 /* MessagingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagingService.m; sourceTree = "<group>"; };
+		5F4EF4B91B13612B00C8D5D8 /* OSSExceptionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSExceptionHelper.m; sourceTree = "<group>"; };
+		5F4EF4BB1B13616200C8D5D8 /* OSSExceptionHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSExceptionHelper.h; sourceTree = "<group>"; };
+		5F4EF4BC1B13630300C8D5D8 /* OSSTry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSTry.swift; sourceTree = "<group>"; };
 		5FBF6C6E1B135515001F1538 /* MessagingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingService.swift; sourceTree = "<group>"; };
 		EED47C455CAA4CDDC58372A1 /* libPods-ThriftTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThriftTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -93,6 +98,9 @@
 				5F12F1AE1A98BDA400565B68 /* Supporting Files */,
 				5FBF6C6E1B135515001F1538 /* MessagingService.swift */,
 				5F4EF4B11B13580900C8D5D8 /* BridgingHeader.h */,
+				5F4EF4B91B13612B00C8D5D8 /* OSSExceptionHelper.m */,
+				5F4EF4BB1B13616200C8D5D8 /* OSSExceptionHelper.h */,
+				5F4EF4BC1B13630300C8D5D8 /* OSSTry.swift */,
 			);
 			path = ThriftTest;
 			sourceTree = "<group>";
@@ -223,7 +231,9 @@
 				5F4EF4B81B135AED00C8D5D8 /* MessagingService.m in Sources */,
 				5FBF6C6F1B135515001F1538 /* MessagingService.swift in Sources */,
 				5F12F1B51A98BDA400565B68 /* MainViewController.swift in Sources */,
+				5F4EF4BD1B13630300C8D5D8 /* OSSTry.swift in Sources */,
 				5F12F1B11A98BDA400565B68 /* AppDelegate.swift in Sources */,
+				5F4EF4BA1B13612B00C8D5D8 /* OSSExceptionHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

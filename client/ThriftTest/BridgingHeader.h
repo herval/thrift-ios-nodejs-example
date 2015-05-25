@@ -16,3 +16,4 @@
 #import <thrift/TSocketClient.h>
 #import <thrift/TBinaryProtocol.h>
 #import "MessagingService.h"
+#import "OSSExceptionHelper.h"
