@@ -16,7 +16,7 @@
 #import "TBase.h"
 
 
-#import "messaging-service.h"
+#import "MessagingService.h"
 
 @implementation User
 
@@ -780,7 +780,7 @@
 @end
 
 
-@implementation messaging-serviceConstants
+@implementation MessagingServiceConstants
 + (void) initialize {
 }
 @end

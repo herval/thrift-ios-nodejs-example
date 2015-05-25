@@ -187,6 +187,6 @@
 - (id<Messaging>) service;
 @end
 
-@interface messaging-serviceConstants : NSObject {
+@interface MessagingServiceConstants : NSObject {
 }
 @end

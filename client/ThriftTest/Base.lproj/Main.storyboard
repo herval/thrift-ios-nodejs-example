@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Lsr-tB-cHi">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="ivT-Kt-QQ0">
+            <objects>
+                <viewController id="Lsr-tB-cHi" customClass="MainViewController" customModule="ThriftTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CDF-c6-o7H"/>
+                        <viewControllerLayoutGuide type="bottom" id="u82-jp-NCg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8o4-7y-4de">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5V-Hf-ORS">
+                                <rect key="frame" x="242" y="94" width="117" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Ping Server"/>
+                                <connections>
+                                    <action selector="pingServerTapped:" destination="Lsr-tB-cHi" eventType="touchUpInside" id="Kxg-FF-Bcc"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Press any button to do stuff." translatesAutoresizingMaskIntoConstraints="NO" id="mKj-7C-bI7">
+                                <rect key="frame" x="16" y="221" width="568" height="366"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="366" id="Ib2-LI-6L1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thrift Client" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LxD-TI-rMQ">
+                                <rect key="frame" x="208" y="48" width="184" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Eah-1N-lDt"/>
+                                    <constraint firstAttribute="width" constant="184" id="gs0-aU-pKT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mKj-7C-bI7" firstAttribute="top" secondItem="U5V-Hf-ORS" secondAttribute="bottom" constant="91" id="7wy-5G-AZO"/>
+                            <constraint firstItem="LxD-TI-rMQ" firstAttribute="centerX" secondItem="U5V-Hf-ORS" secondAttribute="centerX" id="QeC-Un-ihl"/>
+                            <constraint firstItem="LxD-TI-rMQ" firstAttribute="top" secondItem="CDF-c6-o7H" secondAttribute="bottom" constant="28" id="bgI-BU-qe1"/>
+                            <constraint firstItem="u82-jp-NCg" firstAttribute="top" secondItem="mKj-7C-bI7" secondAttribute="bottom" constant="13" id="dKH-1z-cdF"/>
+                            <constraint firstItem="mKj-7C-bI7" firstAttribute="centerX" secondItem="U5V-Hf-ORS" secondAttribute="centerX" id="k1I-6H-8zC"/>
+                            <constraint firstItem="U5V-Hf-ORS" firstAttribute="top" secondItem="LxD-TI-rMQ" secondAttribute="bottom" constant="25" id="mNZ-gq-2z4"/>
+                            <constraint firstItem="LxD-TI-rMQ" firstAttribute="centerX" secondItem="8o4-7y-4de" secondAttribute="centerX" id="tF7-Gx-ZYX"/>
+                            <constraint firstItem="mKj-7C-bI7" firstAttribute="leading" secondItem="8o4-7y-4de" secondAttribute="leadingMargin" id="vdd-oL-aIa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="operationsLog" destination="mKj-7C-bI7" id="PKf-xo-DaW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oii-qU-6MZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85" y="-685"/>
+        </scene>
+    </scenes>
+</document>

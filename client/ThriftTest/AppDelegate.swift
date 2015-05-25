@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  ThriftTest
-//
-//  Created by Herval Freire on 2/21/15.
-//
-
 import UIKit
 
 @UIApplicationMain

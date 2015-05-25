@@ -1,3 +1,8 @@
 .DS_Store
 server/node_modules
 client/Pods
+client/ThriftTest.xcworkspace/xcuserdata/herval.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+client/ThriftTest.xcworkspace/xcuserdata/herval.xcuserdatad/UserInterfaceState.xcuserstate
+client/ThriftTest.xcodeproj/project.xcworkspace/xcuserdata/herval.xcuserdatad/UserInterfaceState.xcuserstate
+client/ThriftTest.xcodeproj/xcuserdata/herval.xcuserdatad/xcschemes/ThriftTest.xcscheme
+client/ThriftTest.xcodeproj/xcuserdata/herval.xcuserdatad/xcschemes/xcschememanagement.plist
