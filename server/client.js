@@ -2,7 +2,7 @@
 
 var thrift = require('thrift');
 var Messaging = require('./gen-nodejs/Messaging');
-var messagingTypes = require('./gen-nodejs/messaging-service_types');
+var messagingTypes = require('./gen-nodejs/MessagingService_types');
 
 var transport = thrift.TBufferedTransport()
 var protocol = thrift.TBinaryProtocol()

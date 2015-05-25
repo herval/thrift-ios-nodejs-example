@@ -5,7 +5,7 @@
 //
 var Thrift = require('thrift').Thrift;
 
-var ttypes = require('./messaging-service_types');
+var ttypes = require('./MessagingService_types');
 //HELPER FUNCTIONS AND STRUCTURES
 
 Messaging_fetchMessages_args = function(args) {
