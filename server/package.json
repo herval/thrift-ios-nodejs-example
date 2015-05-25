@@ -1,0 +1,14 @@
+{
+  "name": "thrift-server",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "node client.js"
+  },
+  "author": "Herval Freire <hervalfreire@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "thrift": "^0.9.2"
+  }
+}
